@@ -20,6 +20,21 @@ div.chairperson-desc-container{
     padding-top: 10px;
 }
 
+section.hero{
+    height: calc(100vh - 100px); 
+    background-blend-mode: multiply; 
+    background-image: url('https://images.unsplash.com/photo-1527090672219-86b82433c4c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'); 
+    background-color: rgba(0, 0, 0, 0.5); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+div.hero-container{
+    height: 100%;
+}
+.hero-title{
+    font-size: 10vw;
+}
+
 @media screen and (min-width: 768px) {
     img.chairperson-img{
         width: 400px;
@@ -29,4 +44,7 @@ div.chairperson-desc-container{
         display: flex;
     }
 
+    .hero-title{
+        font-size: 40px;
+    }
 }
