@@ -1,3 +1,32 @@
 html, body{
     font-family: 'Rubik', sans-serif;
 }
+
+img.chairperson-img{
+    height: 400px;
+    width: 100%;
+}
+
+div.chairperson-container{
+    justify-content: space-between; 
+    padding: 40px 0px;
+}
+
+div.chairperson-img-container{
+    width: 100%;
+}
+
+div.chairperson-desc-container{
+    padding-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    img.chairperson-img{
+        width: 400px;
+    }
+
+    div.chairperson-container{
+        display: flex;
+    }
+
+}
