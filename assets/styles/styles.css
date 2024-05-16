@@ -32,7 +32,7 @@ footer {
 }
 
 footer>div {
-    display: flex;
+    display: block;
     justify-content: space-between;
     height: 100%;
     padding: 48px 0;
@@ -41,7 +41,7 @@ footer>div {
 .footer-link-container {
     display: flex;
     justify-content: space-between;
-    width: 30%;
+    width: 100%;
 }
 
 .gpw-card {
@@ -58,5 +58,13 @@ footer>div {
 
     div.chairperson-container {
         display: flex;
+    }
+
+    footer>div{
+        display: flex;
+    }
+
+    .footer-link-container{
+        width: 30%;
     }
 }
