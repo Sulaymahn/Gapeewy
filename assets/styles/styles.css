@@ -48,7 +48,7 @@ footer>div {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 300px;
+    height: 100px;
     gap: 8px;
 }
 
@@ -56,13 +56,22 @@ footer>div {
     height: 100%;
     object-fit: cover;
     flex-grow: 1;
-    transition: flex-grow 0.5s cubic-bezier(0.215, 0.610, 0.355, 1), filter 0.9s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: flex-grow 0.5s cubic-bezier(0.215, 0.610, 0.355, 1), filter 0.9s cubic-bezier(0.075, 0.82, 0.165, 1), transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
     filter: grayscale(1) brightness(0.8);
 }
 
-.gallery-row>img:hover{
+.gallery-title {
+    width: 100%;
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 32px;
+}
+
+.gallery-row>img:hover {
     flex-grow: 6;
     filter: none;
+    transform: scale(1.2);
+    z-index: 2;
 }
 
 .gpw-card {
@@ -87,5 +96,20 @@ footer>div {
 
     .footer-link-container {
         width: 30%;
+    }
+
+    .gallery-title {
+        width: 100%;
+        font-size: 120px;
+        font-weight: 900;
+        margin-bottom: 32px;
+    }
+
+    .gallery-row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 300px;
+        gap: 8px;
     }
 }
