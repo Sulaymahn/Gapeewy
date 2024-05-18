@@ -4,12 +4,14 @@
 
 :root {
     --primary-color: #3ebb7f;
-    --corner-radius: 32px;
+    --corner-radius: 16px;
 }
 
 img.chairperson-img {
-    max-height: 400px;
-    max-width: 400px;
+    height: auto;
+    width: 100%;
+    border-radius: var(--corner-radius);
+    object-fit: cover;
 }
 
 div.chairperson-container {
