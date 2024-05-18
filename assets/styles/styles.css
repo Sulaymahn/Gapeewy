@@ -4,6 +4,7 @@
 
 :root {
     --primary-color: #3ebb7f;
+    --corner-radius: 32px;
 }
 
 img.chairperson-img {
@@ -76,7 +77,7 @@ footer>div {
 
 .gpw-card {
     padding: 32px;
-    border-radius: 32px;
+    border-radius: var(--corner-radius);
 }
 
 
