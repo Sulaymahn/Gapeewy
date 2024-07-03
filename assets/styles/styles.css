@@ -82,6 +82,17 @@ footer>div {
     border-radius: var(--corner-radius);
 }
 
+.social-link {
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.bi{
+    margin-right: 16px;
+}
+
 
 
 @media screen and (min-width: 768px) {
