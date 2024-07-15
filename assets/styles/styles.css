@@ -5,6 +5,44 @@
 :root {
     --primary-color: #3ebb7f;
     --corner-radius: 16px;
+    --text-color-on-primary: white;
+    --text-color-on-white: #333;
+    --link-text-color: rgb(132, 255, 212);
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav.nav-sticky {
+    position: fixed;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+nav a {
+    color: var(--text-color-on-primary);
+    text-decoration: none;
+}
+
+.primary-container {
+    color: var(--text-color-on-primary);
+}
+
+body {
+    font-size: 100%;
+    color: var(--text-color-on-white);
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h1 {
+    font-size: 2em;
 }
 
 img.chairperson-img {
@@ -31,14 +69,13 @@ footer {
     color: white;
     min-height: 300px;
     background-color: var(--primary-color);
-    margin-top: 32px;
+    padding: 80px 0;
 }
 
 footer>div {
     display: block;
     justify-content: space-between;
     height: 100%;
-    padding: 48px 0;
 }
 
 .footer-link-container {
@@ -65,7 +102,7 @@ footer>div {
 
 .gallery-title {
     width: 100%;
-    font-size: 32px;
+    font-size: 2em;
     font-weight: 900;
     margin-bottom: 32px;
 }
@@ -82,17 +119,34 @@ footer>div {
     border-radius: var(--corner-radius);
 }
 
-.social-link {
-    margin: 0;
-    text-decoration: none;
+.social-icon {
     color: white;
-    display: block;
+    font-size: 1.4em;
 }
 
-.bi{
-    margin-right: 16px;
+ul.social-links,
+ul.site-links {
+    list-style-type: none;
+    padding: 0;
 }
 
+ul.social-links>li {
+    display: inline;
+}
+
+ul.social-links>li:not(:last-child) {
+    margin-right: 1em;
+}
+
+ul.site-links a {
+    color: var(--link-text-color);
+    text-decoration: none;
+}
+
+.icon-link>* {
+    color: var(--link-text-color);
+    text-decoration: none;
+}
 
 
 @media screen and (min-width: 768px) {
@@ -114,7 +168,7 @@ footer>div {
 
     .gallery-title {
         width: 100%;
-        font-size: 120px;
+        font-size: 4em;
         font-weight: 900;
         margin-bottom: 32px;
     }
@@ -125,5 +179,9 @@ footer>div {
         width: 100%;
         height: 300px;
         gap: 8px;
+    }
+
+    h1 {
+        font-size: 4em;
     }
 }
