@@ -45,25 +45,7 @@ h1 {
     font-size: 2em;
 }
 
-img.chairperson-img {
-    height: auto;
-    width: 100%;
-    border-radius: var(--corner-radius);
-    object-fit: cover;
-}
 
-div.chairperson-container {
-    justify-content: space-between;
-    padding: 40px 0px;
-}
-
-div.chairperson-img-container {
-    width: 100%;
-}
-
-div.chairperson-desc-container {
-    padding-top: 10px;
-}
 
 footer {
     color: white;
@@ -82,36 +64,6 @@ footer>div {
     display: flex;
     justify-content: space-between;
     width: 100%;
-}
-
-.gallery-row {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 100px;
-    gap: 8px;
-}
-
-.gallery-row>img {
-    height: 100%;
-    object-fit: cover;
-    flex-grow: 1;
-    transition: flex-grow 0.5s cubic-bezier(0.215, 0.610, 0.355, 1), filter 0.9s cubic-bezier(0.075, 0.82, 0.165, 1), transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-    filter: grayscale(1) brightness(0.8);
-}
-
-.gallery-title {
-    width: 100%;
-    font-size: 2em;
-    font-weight: 900;
-    margin-bottom: 32px;
-}
-
-.gallery-row>img:hover {
-    flex-grow: 6;
-    filter: none;
-    transform: scale(1.2);
-    z-index: 2;
 }
 
 .gpw-card {
@@ -150,14 +102,6 @@ ul.site-links a {
 
 
 @media screen and (min-width: 768px) {
-    img.chairperson-img {
-        width: 400px;
-    }
-
-    div.chairperson-container {
-        display: flex;
-    }
-
     footer>div {
         display: flex;
     }
@@ -183,5 +127,9 @@ ul.site-links a {
 
     h1 {
         font-size: 4em;
+    }
+
+    h2{
+        font-size: 3em;
     }
 }
